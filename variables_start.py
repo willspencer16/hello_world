@@ -7,3 +7,5 @@ print(f)
 f="abc"
 print(f)
 
+# ERROR: variables of different types cannot be combined
+print("this is a string " + str(123))
