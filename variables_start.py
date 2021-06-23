@@ -9,3 +9,11 @@ print(f)
 
 # ERROR: variables of different types cannot be combined
 print("this is a string " + str(123))
+
+# Global vs. local variables in functions
+def someFunction():
+    f='def'
+    print(f)
+
+someFunction()
+print(f)
