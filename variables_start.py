@@ -3,3 +3,7 @@
 f=0
 print(f)
 
+# Re-declaring the variable
+f="abc"
+print(f)
+
