@@ -3,7 +3,7 @@
 f=0
 # print(f)
 
-# Re-declaring the variable
+# # Re-declaring the variable
 # f="abc"
 # print(f)
 
@@ -19,5 +19,5 @@ def someFunction():
 someFunction()
 print(f)
 
-del f
+del f #undefines the variable
 print(f)
