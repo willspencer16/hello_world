@@ -30,5 +30,13 @@ def main():
     # This prints 5 and 6, then terminates the
     # loop as x equals 7.
 
+    # Using a continue statement:
+    for x in range(5, 10):
+        if (x % 2 == 0): continue
+        print(x)
+    # This prints 5, 7 and 9, as the continue
+    # statement only allows the print function to
+    # to come into play when x is divisible by 2.
+
 if __name__ == "__main__":
     main()
