@@ -43,8 +43,29 @@ print (func2(10,20))
 # plus the Python constant of none, as the 
 # function still does not return a value.
 
-#Printing the function with a value:
+# Printing the function with a value:
 print (cube(3))
 # This prints the result of 3 cubed (27),
 # without the Python constant of none, as
 # there is a return within the function.
+
+# Defining a function with a default value for an argument:
+def power(num, x=1):
+    result = 1
+    for i in range(x):
+        result = result * num
+    return result
+
+# Printing the function without a value for the second argument:
+print(power(2))
+# This prints 2, as the second arguement is set to default to 1.
+
+# Printing the function giving a value for both arguments:
+print(power(2,3))
+# This prints 8, as both arguments have been given a value.
+
+# Printing the function with the parameters along with the value:
+print(power(x=3, num=2))
+# This prints 8, even though they are in a different order to the
+# original function, as Python can figure out which arguments to
+# supply the values to.
