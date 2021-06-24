@@ -69,3 +69,22 @@ print(power(x=3, num=2))
 # This prints 8, even though they are in a different order to the
 # original function, as Python can figure out which arguments to
 # supply the values to.
+
+# Defining a function with a variable number of arguments:
+def multi_add(*args):
+    result = 0
+    for x in args:
+        result = result + x
+    return result
+
+# Printing a function with a variable number of arguments:
+print(multi_add(4, 5, 10, 4))
+# This prints 23. By putting the star character in the
+# argument of the original function, a variable number
+# of arguments can be passed. The function then loops
+# over each argument and adds them to a running total,
+# which is then returned.
+
+# Python allows the combination of a variable argument list
+# with a set of formal arguments, BUT the variable argument
+# list must be the last parameter.
