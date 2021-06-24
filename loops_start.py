@@ -17,5 +17,11 @@ def main():
     # for loops are iterators and x represents the
     # individual value within the range.
 
+    # Using a for loop over a collection
+    days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    for d in days:
+        print(d)
+    # This prints each string (d) in the days array.
+
 if __name__ == "__main__":
     main()
