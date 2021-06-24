@@ -38,5 +38,12 @@ def main():
     # statement only allows the print function to
     # to come into play when x is divisible by 2.
 
+    # Using a loop with an index variable:
+    days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    for i,d in enumerate(days):
+        print(i, d)
+    # This prints the index of the member of the
+    # collection in question and the actual member.
+
 if __name__ == "__main__":
     main()
