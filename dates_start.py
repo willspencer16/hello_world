@@ -17,5 +17,13 @@ def main():
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     print ("Which is a: ", days[today.weekday()])
 
+    # Using the now function:
+    today = datetime.now()
+    print("The current date and time is ", today)
+
+    # Getting the current time:
+    t = datetime.time(datetime.now())
+    print("The current time is ", t)
+
 if __name__ == "__main__":
     main()
