@@ -14,3 +14,6 @@ print("Today is: " + str(now))
 
 # Printing today's date one year from now:
 print("One year from now it will be: " + str(now + timedelta(days=365)))
+
+# Using a timedelta that has more than one argument:
+print("In two days and three weeks, it will be: " + str(now + timedelta(days=2, weeks=3)))
