@@ -22,3 +22,14 @@ print("In two days and three weeks, it will be: " + str(now + timedelta(days=2, 
 t = datetime.now() - timedelta(weeks=1)
 s = t.strftime("%A %B %d, %Y")
 print("One week ago it was: " + s)
+
+# Using a timedelta to work out how many days until April Fool's Day:
+today = date.today()
+afd = date(today.year, 4, 1)
+
+if afd < today:
+    print("April Fool's day already went by %d days ago" % ((today-afd).days))
+    afd = afd.replace(year = today.year+1)
+
+time_to_afd = afd-today
+print("It's only", time_to_afd.days, "days until April Fool's Day")
