@@ -22,8 +22,11 @@ def main():
 
     # Opening the file and reading the contents:
     if f.mode == 'r': # This checks the file can be read.
-        contents = f.read() # This reads the content.
-        print(contents) # This prints the contents to the console.
+        # contents = f.read() # This reads the content.
+        # print(contents) # This prints the contents to the console.
+        fl = f.readlines()
+        for x in fl:
+            print(x)
 
 
 if __name__ == "__main__":
