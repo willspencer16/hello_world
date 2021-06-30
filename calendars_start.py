@@ -18,3 +18,11 @@ for i in c.itermonthdays(2021, 8):
 # This prints of the numbers that represent each day of the month.
 # There are zeros at the start and the end because there are days
 # in that week which belong to another month.
+
+# Using the calendar module to print the month and day names depending on the locale:
+for name in calendar.month_name:
+    print(name)
+
+for day in calendar.day_name:
+    print(day)
+# This varies depending on the locale of the computer.
